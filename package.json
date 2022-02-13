@@ -1,0 +1,42 @@
+{
+  "name": "gitzz",
+  "version": "0.0.1",
+  "description": "Easy get commit data from Github with gitq",
+  "main": "index.js",
+  "scripts": {
+    "build": "grunt build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "keywords": [
+    "git",
+    "github",
+    "commit",
+    "stat"
+  ],
+  "author": {
+    "name": "devkwonsehoon",
+    "email": "devkwonsehoon@naver.com",
+    "url": "https://velog.io/@devkwonsehoon"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "terser-webpack-plugin": "^5.3.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-contrib-jshint": "^3.1.1",
+    "grunt-contrib-uglify": "^5.0.1",
+    "grunt-webpack": "^5.0.0",
+    "load-grunt-tasks": "^5.1.0",
+    "webpack": "^5.68.0"
+  }
+}

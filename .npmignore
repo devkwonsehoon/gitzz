@@ -1,0 +1,5 @@
+**/.*
+*.iml
+coverage/
+node_modules/
+Gruntfile.js

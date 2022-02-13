@@ -1,7 +1,7 @@
 {
   "name": "gitzz",
-  "version": "0.0.1",
-  "description": "Easy get commit data from Github with gitq",
+  "version": "0.0.2",
+  "description": "Easy get commit data from Github with gitzz",
   "main": "index.js",
   "scripts": {
     "build": "grunt build",

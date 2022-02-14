@@ -1,6 +1,6 @@
 {
   "name": "gitzz",
-  "version": "0.0.2",
+  "version": "0.0.4-beta",
   "description": "Easy get commit data from Github with gitzz",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,15 @@
     "name": "devkwonsehoon",
     "email": "devkwonsehoon@naver.com",
     "url": "https://velog.io/@devkwonsehoon"
+  },
+  "homepage": "https://github.com/devkwonsehoon/gitzz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devkwonsehoon/gitzz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devkwonsehoon/gitzz/issues",
+    "email": "devkwonsehoon@naver.com"
   },
   "license": "MIT",
   "dependencies": {

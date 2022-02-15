@@ -9,3 +9,4 @@ sauce_connect.log
 package-lock.json
 Gruntfile.js
 webpack.config.js
+dist

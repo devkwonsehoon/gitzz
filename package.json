@@ -1,11 +1,11 @@
 {
   "name": "gitzz",
-  "version": "0.0.8-beta",
+  "version": "0.0.9-beta",
   "description": "Easy get commit data from Github with gitzz",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && node dist",
+    "build": "tsc",
     "lint": "eslint \"lib/**/*.ts\" --fix"
   },
   "files": [

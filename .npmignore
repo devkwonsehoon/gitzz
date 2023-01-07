@@ -5,3 +5,4 @@ node_modules/
 Gruntfile.js
 lib
 test
+.nyc_output

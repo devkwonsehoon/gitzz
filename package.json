@@ -1,6 +1,6 @@
 {
   "name": "gitzz",
-  "version": "0.2.2-beta",
+  "version": "0.2.3-beta",
   "description": "Easy get commit data from Github with gitzz",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
     "test": "mocha test/**/*.ts",
     "build": "tsc",
     "lint": "eslint \"lib/**/*.ts\" --fix",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls"
   },
   "files": [
     "dist",

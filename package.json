@@ -1,6 +1,6 @@
 {
   "name": "gitzz",
-  "version": "0.2.1-beta",
+  "version": "0.2.2-beta",
   "description": "Easy get commit data from Github with gitzz",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

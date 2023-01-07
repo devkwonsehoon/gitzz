@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "mocha test/**/*.ts",
+    "test": "mocha test/**/*.ts --r ts-node/register",
     "build": "tsc",
     "lint": "eslint \"lib/**/*.ts\" --fix",
     "coverage": "nyc npm run test && nyc report --reporter=text-lcov | coveralls"

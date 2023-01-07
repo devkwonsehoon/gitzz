@@ -1,5 +1,10 @@
 # gitzz
 
+[![Build Status](https://app.travis-ci.com/devkwonsehoon/gitzz.svg?branch=main)](https://app.travis-ci.com/devkwonsehoon/gitzz)
+[![Coverage Status](https://coveralls.io/repos/github/devkwonsehoon/gitzz/badge.svg?branch=main)](https://coveralls.io/github/devkwonsehoon/gitzz?branch=main)
+
+<br>
+
 [![author](https://img.shields.io/badge/author-devkwonsehoon-0066FF.svg?style=flat-square)](https://velog.io/@devkwonsehoon)
 [![](https://shields.io/npm/v/gitzz)](https://www.npmjs.com/package/gitzz) [![](https://shields.io/npm/dt/gitzz)](https://www.npmjs.com/package/gitzz)
 

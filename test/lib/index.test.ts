@@ -8,7 +8,7 @@ import {
   getYesterdayCommitCount,
   requestOrgToGithub,
   requestUserToGithub,
-} from './../lib/index';
+} from '../../lib/index';
 
 const USER_NAME = 'devkwonsehoon';
 const ORGANIZATION = 'microsoft';

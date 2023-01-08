@@ -4,9 +4,8 @@ import dayjs from 'dayjs';
 
 /**
  * Connect Github
- *
- * @param {user} Github_username
- * @return {$, lst}
+ * @param username
+ * @returns
  */
 export const requestUserToGithub = async (username: string): Promise<any> => {
   try {
@@ -28,8 +27,8 @@ export const requestUserToGithub = async (username: string): Promise<any> => {
 /**
  * Get daily commit count
  *
- * @param {user} username
- * @return {todayCommit}
+ * @param {string} username
+ * @return {Promise<number>} todayCommitCount
  */
 export const getDayCommitCount = async (username: string): Promise<number> => {
   const response = await requestUserToGithub(username);
@@ -59,8 +58,8 @@ export const getDayCommitCount = async (username: string): Promise<number> => {
 /**
  * Get yesterday commit count
  *
- * @param {user} username
- * @return {yesterdayCommitCount}
+ * @param {string} username
+ * @return {Promise<number>} yesterdayCommitCount
  */
 export const getYesterdayCommitCount = async (username: string): Promise<number> => {
   const response = await requestUserToGithub(username);
@@ -90,8 +89,8 @@ export const getYesterdayCommitCount = async (username: string): Promise<number>
 /**
  * Get monthly commit count
  *
- * @param {user} username
- * @return {monthCommitCount}
+ * @param {string} username
+ * @return {Promise<number>} monthCommitCount
  */
 export const getMonthCommitCount = async (username: string): Promise<number> => {
   const response = await requestUserToGithub(username);
@@ -120,8 +119,8 @@ export const getMonthCommitCount = async (username: string): Promise<number> => 
 /**
  * Get year commit count
  *
- * @param {user} username
- * @return {yearCommitCount}
+ * @param {string} username
+ * @return {Promise<number>} yearCommitCount
  */
 export const getYearCommitCount = async (username: string): Promise<number> => {
   const response = await requestUserToGithub(username);
@@ -196,7 +195,8 @@ export const getCommitStatistics = async (
 /**
  * Connect Github Organization
  *
- * @param {organization_name, repository_name}
+ * @param {string} organization_name
+ * @param {string} repository_name
  * @return {$}
  */
 export const requestOrgToGithub = async (organization_name: string, repository_name: string): Promise<any> => {
@@ -216,8 +216,9 @@ export const requestOrgToGithub = async (organization_name: string, repository_n
 /**
  * Get commit count of org/repo
  *
- * @param {organization_name, repository_name}
- * @return {organizationCommitCount}
+ * @param {string} organization_name
+ * @param {string} repository_name
+ * @return {Promise<number>} organizationCommitCount
  */
 export const getOrganizationCommitCount = async (organization_name: string, repository_name: string): Promise<number> => {
   const response = await requestOrgToGithub(organization_name, repository_name);

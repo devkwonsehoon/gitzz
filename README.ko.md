@@ -6,16 +6,15 @@
 <br>
 [![author](https://img.shields.io/badge/author-devkwonsehoon-0066FF.svg?style=flat-square)](https://velog.io/@devkwonsehoon)
 
-> The Gitzz is a JavaScript library that helps you easily parse Github's commit data.
+> gitzz는 손쉽게 Github의 커밋 데이터를 가져올 수 있도록 도와주는 Javascript 라이브러리입니다.
 
-## Links
+## 링크
 
 - [NPM gitzz](https://www.npmjs.com/package/gitzz)
-- [한글 README](README.ko.md)
 
-## Getting Started
+## 시작
 
-### Installation
+### 설치 방법
 
 ```console
 npm install gitzz
@@ -25,30 +24,30 @@ npm install gitzz
 yarn add gitzz
 ```
 
-## Usage
+## 사용법
 
-### Basics
+### 기본
 
 ```typescript
-// Getting today commit count
+// 오늘 하루 동안의 커밋 개수를 가져옵니다.
 const todayCommit: number = await getDayCommitCount('username')
 
-// All methods in gitzz return null on invalid requests.
+// gitzz의 모든 메서드들은 잘못된 요청에 null을 반환합니다.
 if (!todayCommit) throw something...
 
-// and enjoy it
+// 끝!
 console.log(todayCommit)
 ```
 
 ### Methods
 
-- Getting commit counts via
+- 커밋 개수를 가져오는 메서드들은 아래와 같습니다.
   - `getDayCommitCount`, `getYesterdayCommitCount`, `getMonthCommitCount`, `getYearCommitCount`
-- Parsing Github page for using jquery
+- jquery 세팅을 위해 파싱을 해올 수 있습니다.
   - `requestUserToGithub`, `requestOrgToGithub`
-- also, you can get all commit stats with a method `getCommitStatistics`
-- need organization's commit count? use `getOrganizationCommitCount`
+- 또한 `getCommitStatistics`를 사용해 일/월/년도별 커밋 데이터를 한번에 가져올 수 있습니다.
+- Organization내 레포지토리에 대한 커밋 갯수가 필요하다면 `getOrganizationCommitCount`를 사용합니다.
 
 ## License
 
-gitzz is licensed under a [MIT License](LICENSE).
+gitzz의 라이선스는 [MIT License](LICENSE).

@@ -1,2 +1,2 @@
 // eslint-disable-next-line strict
-module.exports = require('./lib/index.ts');
+module.exports = require('./lib/index.js');

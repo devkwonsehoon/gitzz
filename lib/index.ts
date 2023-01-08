@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { load } from 'cheerio/lib/slim';
+import { load } from 'cheerio';
 import dayjs from 'dayjs';
 
 /**

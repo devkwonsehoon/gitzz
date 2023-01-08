@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { CheerioAPI, load } from 'cheerio';
+import { load } from 'cheerio/lib/slim';
 import dayjs from 'dayjs';
 
 /**
@@ -225,7 +225,7 @@ export const getOrganizationCommitCount = async (organization_name: string, repo
   if (!response) {
     return null;
   }
-  const $: CheerioAPI = response;
+  const $ = response;
 
   const organizationCommitCount = Number($('body').find('div.Box-header div ul span').children('strong').text().replace(',', ''));
   return organizationCommitCount;
